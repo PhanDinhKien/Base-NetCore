@@ -20,6 +20,8 @@ namespace Bbk.Data.EntityModel
 
         public DateTime DeletionTime { get; set; }
 
+        public int Total { get; set; }
+
         public bool IsDeleted { get; set; }
     }
 }

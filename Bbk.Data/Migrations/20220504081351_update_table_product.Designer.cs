@@ -4,14 +4,16 @@ using Bbk.Data.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Bbk.Data.Migrations
 {
     [DbContext(typeof(BBKDbContext))]
-    partial class BBKDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220504081351_update_table_product")]
+    partial class update_table_product
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
