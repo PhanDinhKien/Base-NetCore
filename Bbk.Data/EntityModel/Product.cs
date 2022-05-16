@@ -22,6 +22,8 @@ namespace Bbk.Data.EntityModel
 
         public int Total { get; set; }
 
+        public string Node { get; set; }
+
         public bool IsDeleted { get; set; }
     }
 }

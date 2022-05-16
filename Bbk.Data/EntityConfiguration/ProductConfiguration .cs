@@ -20,7 +20,8 @@ namespace Bbk.Data.EntityConfiguration
             builder.Property(x => x.Price).IsRequired(true).HasDefaultValue(0);
             builder.Property(x => x.CreationTime).HasDefaultValueSql("GetDate()");
             builder.Property(x => x.IsDeleted).IsRequired(true).HasDefaultValue(false);
-            builder.Property(x => x.Total).IsRequired(true).HasDefaultValue(0); 
+            builder.Property(x => x.Total).IsRequired(true).HasDefaultValue(0);
+            builder.Property(x => x.Node).HasMaxLength(500); 
         }
     }
 }
